@@ -62,6 +62,20 @@ public class Main {
         }
         System.out.println("Legnépszerűbb bejegyzés likejainak száma: ");
         System.out.println(bejegyzesek.get(hanyadik).getLikeok());
+
+        boolean van = false;
+
+        for (int i = 0; i < bejegyzesek.size(); i++) {
+            if (bejegyzesek.get(i).getLikeok() > 35){
+                van = true;
+                break;
+            }
+        }
+        if (van){
+            System.out.println("\nVan olyan bejegyzés, ami 35 likenál többet kapott.");
+        }else {
+            System.out.println("\nEgyik bejegyzés sem kapott 35 likenál többet.");
+        }
     }
 
     public static void FileBekeres(){
