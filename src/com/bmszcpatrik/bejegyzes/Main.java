@@ -77,7 +77,6 @@ public class Main {
             System.out.println("\nEgyik bejegyzés sem kapott 35 likenál többet.");
         }
 
-        van = false;
         int darab = 0;
         for (int i = 0; i < bejegyzesek.size(); i++) {
             if (bejegyzesek.get(i).getLikeok() < 15){
