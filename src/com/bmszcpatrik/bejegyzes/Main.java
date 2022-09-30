@@ -16,6 +16,9 @@ public class Main {
 
     public static List<Bejegyzes> bejegyzesek = new ArrayList<>();
     public static void main(String[] args) {
+
+        // Második feladat -----------------------------------------------------------------------------
+
         bejegyzesek.add(new Bejegyzes("Magyar Dániel", "Nehéz az élet"));
         bejegyzesek.add(new Bejegyzes("Korcsek Mihály", "Pékség"));
         int darabszam;
@@ -47,6 +50,18 @@ public class Main {
 
         System.out.println(bejegyzesek);
 
+        // Harmadik feladat ------------------------------------------------------------------------
+
+        int max = 0;
+        int hanyadik = 0;
+        for (int i = 0; i < bejegyzesek.size(); i++) {
+            if (bejegyzesek.get(i).getLikeok() > max){
+                max = bejegyzesek.get(i).getLikeok();
+                hanyadik = i;
+            }
+        }
+        System.out.println("Legnépszerűbb bejegyzés likejainak száma: ");
+        System.out.println(bejegyzesek.get(hanyadik).getLikeok());
     }
 
     public static void FileBekeres(){
