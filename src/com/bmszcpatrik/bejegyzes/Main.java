@@ -83,10 +83,7 @@ public class Main {
                 darab++;
             }
         }
-
         System.out.printf("%d darab 15-nél kevesebb likeot kapott bejegyzés van.", darab);
-
-
     }
 
     public static void FileBekeres(){
