@@ -76,6 +76,18 @@ public class Main {
         }else {
             System.out.println("\nEgyik bejegyzés sem kapott 35 likenál többet.");
         }
+
+        van = false;
+        int darab = 0;
+        for (int i = 0; i < bejegyzesek.size(); i++) {
+            if (bejegyzesek.get(i).getLikeok() < 15){
+                darab++;
+            }
+        }
+
+        System.out.printf("%d darab 15-nél kevesebb likeot kapott bejegyzés van.", darab);
+
+
     }
 
     public static void FileBekeres(){
